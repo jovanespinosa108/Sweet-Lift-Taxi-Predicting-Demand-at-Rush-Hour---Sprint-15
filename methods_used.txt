@@ -1,0 +1,86 @@
+Methods used in the time series project / Métodos utilizados en el proyecto de series temporales
+
+Methods used in the time series project
+
+Resample
+What it is: Pandas method to regroup data into time intervals (e.g., converting minutes into hours or days).
+Where to apply it: When you need to smooth data or work on a different time scale (e.g., daily energy consumption instead of per minute).
+
+1. Resample
+
+Qué es: Método de pandas para reagrupar datos en intervalos de tiempo (ej. pasar de minutos a horas o días).
+Dónde aplicarlo: Cuando necesitas suavizar datos o trabajar en una escala temporal diferente (ejemplo: consumo energético por día en lugar de por minuto).
+
+Rolling Mean (Moving Average)
+What it is: Calculates the average of a window of consecutive values.
+Where to apply it: To smooth the series and observe trends by eliminating noise (e.g., weekly trend instead of daily variation).
+
+2. Rolling Mean (Media móvil)
+
+Qué es: Calcula el promedio de una ventana de valores consecutivos.
+Dónde aplicarlo: Para suavizar la serie y observar tendencias eliminando ruido (ejemplo: ver la tendencia semanal en lugar de la variación diaria).
+
+Lags
+What it is: Variables that represent past values of the series (e.g., yesterday’s consumption, or from 7 days ago).
+Where to apply it: When past values influence future ones (very common in time series forecasting).
+
+3. Lags (Rezagos)
+
+Qué es: Variables que representan valores pasados de la serie (ejemplo: consumo de ayer, hace 7 días, etc.).
+Dónde aplicarlo: Cuando los valores pasados influyen en los futuros (muy común en predicción de series temporales).
+
+Autocorrelation Function (ACF)
+What it is: A statistical tool that measures the relationship between the series and its own lags.
+Where to apply it: To identify seasonality and temporal dependence (e.g., checking if a pattern repeats every 24 hours or every week).
+
+Autocorrelation Function (ACF)
+Qué es: Herramienta estadística que mide la relación entre la serie y sus propios rezagos.
+Dónde aplicarlo: Para identificar estacionalidad y dependencia temporal (ejemplo: saber si un patrón se repite cada 24 horas o cada semana).
+
+5. train_test_split (with shuffle=False)
+What it is: Scikit-learn function to split the dataset into training and testing sets.
+Where to apply it: Always when training predictive models; in time series it is key to use shuffle=False to preserve chronological order.
+
+train_test_split (con shuffle=False)
+Qué es: Función de scikit-learn para separar los datos en entrenamiento y prueba.
+Dónde aplicarlo: Siempre que entrenes modelos predictivos; en series temporales es clave usar shuffle=False para mantener el orden cronológico.
+
+6. Linear Regression
+What it is: A simple model that predicts a numerical value as a linear combination of variables.
+Where to apply it: As a baseline model or when the relationship between variables is linear.
+
+Linear Regression
+Qué es: Modelo simple que predice un valor numérico como combinación lineal de las variables.
+Dónde aplicarlo: Como modelo base o cuando la relación entre variables es lineal.
+
+7. Random Forest Regressor
+What it is: An ensemble model based on multiple decision trees.
+Where to apply it: When you want to capture non-linear and complex relationships while keeping interpretability.
+
+Random Forest Regressor
+Qué es: Modelo de ensamble basado en múltiples árboles de decisión.
+Dónde aplicarlo: Cuando quieres capturar relaciones no lineales y complejas, pero sin perder interpretabilidad.
+
+8. CatBoost Regressor
+What it is: A gradient boosting algorithm optimized for categorical variables and time series.
+Where to apply it: When you need high accuracy in datasets with temporal dependencies and categorical features.
+
+CatBoost Regressor
+Qué es: Algoritmo de gradient boosting optimizado para variables categóricas y series temporales.
+Dónde aplicarlo: Cuando necesitas alta precisión en datasets con dependencias temporales y variables categóricas.
+
+9. LightGBM Regressor
+What it is: A very efficient boosting algorithm designed to handle large volumes of data.
+Where to apply it: When you require speed and accuracy in problems with many rows/columns.
+
+LightGBM Regressor
+Qué es: Algoritmo de boosting muy eficiente que trabaja con grandes volúmenes de datos.
+Dónde aplicarlo: Cuando requieres rapidez y precisión en problemas con muchas filas/columnas.
+
+10. RMSE (Root Mean Squared Error)
+What it is: A metric that measures the average squared error between actual and predicted values.
+Where to apply it: Always when evaluating the quality of a regression model; the lower, the better.
+
+RMSE (Root Mean Squared Error)
+Qué es: Métrica que mide el error promedio cuadrático entre valores reales y predichos.
+Dónde aplicarlo: Siempre que quieras evaluar la calidad de un modelo de regresión; cuanto más bajo, mejor.
